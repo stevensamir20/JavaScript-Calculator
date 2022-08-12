@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  color: white;
+  font-size: 18px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover{
+  color: black;
+  font-size: 25px;
+  background-color: yellowgreen;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 340px;
+  height: 410px;
+  background-color: black;
+  margin: 150px auto 100px auto;
+  padding: 5px;
+}
+#forumla-screen{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  color: yellow;
+  padding-right: 10px;
+}
+#output-screen{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 35px;
+  background-color: black;
   color: white;
+  font-size: 25px;
+  padding-right: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+#input-screen{ 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 340px;
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clear {
+  grid-column: 1/3;
+}
+#clear {
+  background-color: rgb(134, 4, 4);
+}
+.equal {
+  grid-column: 4/5;
+  grid-row: 4/6
+}
+#equal {
+  background-color: rgb(1, 1, 162);
+}
+.zero {
+  grid-column: 1/3;
+}
+.operators {
+  background-color: grey;
+}
+.digits {
+  background-color: rgb(84, 83, 83);
 }
